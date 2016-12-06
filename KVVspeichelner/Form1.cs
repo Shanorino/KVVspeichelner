@@ -34,7 +34,7 @@ namespace KVVspeichelner
             request.AddHeader("user-agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36");
             request.AddHeader("upgrade-insecure-requests", "1");
             request.AddHeader("origin", "https//www.kvv.de");
-            //add the parameters
+            //add the parameter
             request.AddParameter("application/x-www-form-urlencoded", "SpEncId=0&action=XSLT_TRIP_REQUEST2&anyMaxSizeHitList=20&anySigWhenPerfectNoOtherMatches=1&convertAddressesITKernel2LocationServer=1&convertCrossingsITKernel2LocationServer=1&convertPOIsITKernel2LocationServer=1&convertStopsPTKernel2LocationServer=1&itdDateDayMonthYear=02.10.2016&itdLPxx_formAction=https://www.kvv.de/index.php?id=674 &itdLPxx_snippet=true&itdTimeHour=12&itdTimeMinute=0&itdTripDateTimeDepArr=arr&language=de&lineRestriction=403&locationServerActive=1&nameDefaultText_destination=z.B. Bruchsal Rendezvous&nameDefaultText_origin=z.B. Karlsruhe Ettlinger Tor &nameInfo_destination=7000003&nameInfo_origin=streetID:1500000153::8215059:-1:Sternenfelser Straße:Oberderdingen:Sternenfelser Straße::Sternenfelser Straße: 75038:ANY:DIVA_STREET:980209:5714746:MRCV:B_W&name_destination=Karlsruhe, Durlacher Tor / KIT-Campus Süd&name_origin=Oberderdingen, Sternenfelser Straße&ptOptionsActive=1&requestID=0&sessionID=0&stateless=1&type_destination=any&type_origin=any&useRealtime=1", ParameterType.RequestBody);
             IRestResponse response = client.Execute(request);
             string parse="";
